@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chai Stall Bill Counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="counter-card">
+    <h1>☕ Chai Stall Bill Counter</h1>
+    <p class="intro">A quick bill counter for each customer at our roadside chai stall.</p>
+
+    <section class="bill-box" id="bill-box">
+      <p class="bill-label">Current bill</p>
+      <p class="bill-amount">₹<span id="bill">0</span></p>
+      <p class="big-order-message" id="big-order-message">Big order!</p>
+    </section>
+
+    <div class="button-row">
+      <button class="item-btn" id="chai-btn" data-price="15">Chai ₹15</button>
+      <button class="item-btn" id="samosa-btn" data-price="20">Samosa ₹20</button>
+      <button class="item-btn" id="vadapav-btn" data-price="25">Vada Pav ₹25</button>
+      <button class="reset-btn" id="reset-btn">Reset</button>
+    </div>
+
+    <section class="how-to">
+      <h2>How to use</h2>
+      <ul>
+        <li>Click an item button each time the customer orders it.</li>
+        <li>The bill above adds up the total in rupees.</li>
+        <li>At ₹200 or more the bill turns orange with a "Big order!" message.</li>
+        <li>Click Reset to start a new customer's bill at ₹0.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
